@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 6 - Formulario</title>
+  </head>
+  <body>
+    <h1>Practica 6 - Formulario</h1>
+    <p>Por favor, completa los siguientes datos para registrarte.</p>
+
+    <form action="" method="post">
+      <label for="nombre_completo">Nombre Completo:</label><br />
+      <input
+        type="text"
+        name="nombre_completo"
+        id="nombre_completo"
+        required
+        minlength="3"
+        maxlength="80"
+        placeholder="Escribe tu nombre completo"
+      />
+      <br /><br />
+
+      <label for="correo">Correo Electronico:</label><br />
+      <input
+        type="email"
+        name="correo"
+        id="correo"
+        required
+        placeholder="ejemplo@ejemplo.com"
+      />
+      <br /><br />
+
+      <label for="edad">Edad:</label><br />
+      <input
+        type="number"
+        name="edad"
+        id="edad"
+        required
+        min="15"
+        max="100"
+        placeholder="Ej. 20"
+      />
+      <br /><br />
+
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br />
+      <input
+        type="date"
+        name="fecha_nacimiento"
+        id="fecha_nacimiento"
+        required
+      />
+      <br /><br />
+
+      <label for="carrera">Carrera:</label><br />
+      <select name="carrera" id="carrera" required>
+        <option value="" disabled selected>-- Selecciona tu carrera --</option>
+        <option value="licenciatura_tecnologias">
+          Licenciatura en Tecnologias de la Informacion
+        </option>
+        <option value="licenciatura_contabilidad">
+          Licenciatura en Contabilidad
+        </option>
+        <option value="licenciatura_medicina">Licenciatura en Medicina</option>
+        <option value="licenciatura_administracion">
+          Licenciatura en Administración
+        </option>
+        <option value="licenciatura_derecho">Licenciatura en Derecho</option>
+        <option value="licenciatura_arquitectura">
+          Licenciatura en Arquitectura
+        </option>
+        <option value="licenciatura_turismo">
+          Licenciatura en Bodriorismo
+        </option>
+      </select>
+      <br /><br />
+
+      <label>Turno de asistencia:</label><br />
+      <input
+        type="radio"
+        name="turno"
+        id="turno_matutino"
+        value="matutino"
+        required
+      />
+      <label for="turno_matutino">Matutino</label>
+      <br />
+      <input
+        type="radio"
+        name="turno"
+        id="turno_vespertino"
+        value="vespertino"
+      />
+      <label for="turno_vespertino">Vespertino</label>
+      <br /><br />
+
+      <input type="checkbox" name="terminos" id="terminos" required />
+      <label for="terminos">Acepto los términos y condiciones</label>
+      <br /><br />
+
+      <input type="submit" value="Enviar Registro" />
+      <input type="reset" value="Limpiar Formulario" />
+    </form>
+  </body>
+</html>
