@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00264c;
+  font-size: 26px;
+}
+
+.contenedor {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* Estructura de la tabla */
+table {
+  margin: 0 auto;
+  border-spacing: 3px;
+}
+
+td {
+  padding: 0;
+  text-align: center;
+}
+
+.separador {
+  height: 15px;
+}
+
+/* Casillas */
+a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  text-decoration: none;
+  border-radius: 3px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+a:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 4px 8px #000000;
+}
+
+/* Textos dentro de las casillas */
+.num {
+  font-size: 9px;
+  float: right;
+  font-weight: bold;
+}
+
+strong {
+  font-size: 18px;
+  display: block;
+  margin-top: 3px;
+}
+
+.nombre {
+  font-size: 8px;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Colores de las categorias */
+.alcalino {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.alcalinoterreo {
+  background-color: #e67e22;
+  color: white;
+}
+
+.transicion {
+  background-color: #74b9ff;
+  color: black;
+}
+
+.post-transicion {
+  background-color: #a29bfe;
+  color: black;
+}
+
+.metaloide {
+  background-color: #fdcb6e;
+  color: black;
+}
+
+.no-metal {
+  background-color: #55efc4;
+  color: black;
+}
+
+.gas-noble {
+  background-color: #fab1a0;
+  color: black;
+}
+
+.lantanido {
+  background-color: #0984e3;
+  color: white;
+}
+
+.actinido {
+  background-color: #00b894;
+  color: white;
+}
+
+.desconocido {
+  background-color: #dfe6e9;
+  color: black;
+}
+
+/* Leyenda inferior */
+.leyenda {
+  margin: 30px auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.leyenda div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.leyenda span {
+  width: 25px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 2px;
+}
